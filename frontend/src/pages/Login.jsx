@@ -88,7 +88,7 @@ function Login() {
                         <div style={{ marginBottom: '15px' }}>
                             <ReCAPTCHA
                                 ref={captchaRef}
-                                sitekey="6Lf7OtssAAAAANX88pWHnPCqcjA7uCZDXcnAf6W6"
+                                sitekey="6LeVfhItAAAAACMkuh-3PwUgeaJnOxzS0UZUAEW9"
                                 onChange={handleCaptcha}
                             />
                         </div>
