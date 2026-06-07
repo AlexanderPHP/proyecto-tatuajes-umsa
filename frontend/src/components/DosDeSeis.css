@@ -1,0 +1,59 @@
+/* Contenedor principal con nuestro fondo oscuro secundario */
+.galeria-container {
+    padding: 5rem 2rem;
+    background-color: var(--bg-secundario);
+    text-align: center;
+}
+
+/* Título con un detalle dorado en la parte inferior */
+.galeria-titulo {
+    font-size: 2.5rem;
+    margin-bottom: 3.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+.galeria-titulo::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--oro-principal);
+}
+
+/* LA MAGIA DEL GRID: 
+  auto-fit y minmax calculan automáticamente cuántas columnas caben.
+  Ya no necesitamos duplicar el HTML ni usar media queries para esto.
+*/
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo de las imágenes */
+.galeria-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover; /* Asegura que la imagen no se deforme */
+    border-radius: 8px;
+    border: 1px solid #333; /* Borde sutil oscuro en lugar de verde */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    filter: grayscale(20%); /* Le da un tono ligeramente más dramático por defecto */
+}
+
+/* Efecto hover interactivo y elegante */
+.galeria-img:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(212, 175, 55, 0.15); /* Sombra con un toque dorado */
+    border-color: var(--oro-principal);
+    filter: grayscale(0%); /* Vuelve a todo color al pasar el mouse */
+    z-index: 2;
+    position: relative;
+}

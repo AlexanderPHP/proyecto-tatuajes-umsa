@@ -1,0 +1,123 @@
+/* Contenedor Principal del Footer */
+.Container-Footer {
+    background-color: var(--bg-principal);
+    color: var(--texto-principal);
+    padding: 4rem 2rem 1rem;
+    border-top: 2px solid var(--oro-principal);
+    font-family: var(--fuente-textos);
+}
+
+/* Cuadrícula de 3 columnas */
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Títulos de cada sección */
+.footer-section h3 {
+    color: var(--oro-principal);
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.footer-section p {
+    color: var(--texto-secundario);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Lista de Estilos */
+.carreras-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.carreras-list li {
+    margin-bottom: 0.8rem;
+}
+
+.carreras-list a, 
+.enlaces-rapidos a {
+    color: var(--texto-secundario);
+    text-decoration: none;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.carreras-list a:hover, 
+.enlaces-rapidos a:hover {
+    color: var(--oro-principal);
+    padding-left: 5px; /* Pequeño efecto de movimiento al pasar el ratón */
+}
+
+/* Códigos QR */
+.qr-code img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid var(--oro-principal);
+    border-radius: 8px;
+    padding: 5px;
+    background-color: #fff; /* Fondo blanco sutil para que el QR sea legible */
+}
+
+/* Redes Sociales - LA MAGIA DEL FILTRO CSS */
+.redes-sociales {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 2rem;
+}
+
+.icono-red {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    /* Este filtro matemático convierte cualquier color en el tono dorado #D4AF37 */
+    filter: brightness(0) saturate(100%) invert(76%) sepia(43%) saturate(452%) hue-rotate(6deg) brightness(93%) contrast(89%);
+}
+
+.red-social:hover .icono-red {
+    transform: scale(1.15) translateY(-5px);
+    /* Al pasar el ratón, se vuelve un poco más brillante */
+    filter: brightness(0) saturate(100%) invert(86%) sepia(33%) saturate(652%) hue-rotate(6deg) brightness(103%) contrast(99%);
+}
+
+.enlaces-rapidos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Divisor y Copyright */
+.footer-divider {
+    border: none;
+    border-top: 1px solid #333;
+    max-width: 1200px;
+    margin: 3rem auto 1.5rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    color: var(--texto-secundario);
+    font-size: 0.9rem;
+}
+
+.creditos-dev {
+    color: #666;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .footer-content {
+        text-align: center;
+    }
+    .redes-sociales {
+        justify-content: center;
+    }
+}

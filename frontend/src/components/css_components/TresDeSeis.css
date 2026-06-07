@@ -1,0 +1,25 @@
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    background-color: var(--bg-principal);
+    padding: 5rem 2rem;
+    text-align: center;
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+}
+
+.stat-number {
+    font-size: 3.5rem;
+    color: var(--oro-principal);
+    margin-bottom: 0.5rem;
+    line-height: 1;
+}
+
+.stat-text {
+    color: var(--texto-secundario);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+}

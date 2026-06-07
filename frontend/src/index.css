@@ -1,0 +1,43 @@
+:root {
+  /* Paleta de Colores - Dark Ink */
+  --bg-principal: #121212;
+  --bg-secundario: #1A1A1A;
+  --bg-tarjetas: #222222;
+  
+  --oro-principal: #D4AF37;
+  --oro-hover: #F1C40F;
+  
+  --texto-principal: #E0E0E0;
+  --texto-secundario: #A0A0A0;
+  
+  --peligro: #cf6679; /* Un rojo más suave que no lastima la vista en modo oscuro */
+  --exito: #03dac6; /* Un verde turquesa elegante */
+
+  /* Tipografías */
+  --fuente-titulos: 'Playfair Display', serif;
+  --fuente-textos: 'Montserrat', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: var(--bg-principal);
+  color: var(--texto-principal);
+  font-family: var(--fuente-textos);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--fuente-titulos);
+  font-weight: 600;
+  color: var(--oro-principal);
+}
+
+
+

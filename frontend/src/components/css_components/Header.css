@@ -1,0 +1,264 @@
+/* HEADER PRINCIPAL - DARK INK */
+.header-dark {
+    background-color: #121212;
+    border-bottom: 2px solid #D4AF37;
+    padding: 0 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-dark {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-img {
+    width: 45px;
+    height: auto;
+}
+
+.logo-container h2 {
+    color: #D4AF37;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+/* --- MENÚ DE ESCRITORIO --- */
+.desktop-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.desktop-menu li a,
+.desktop-menu li button {
+    color: #E0E0E0;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-family: inherit;
+}
+
+.desktop-menu li a:hover,
+.desktop-menu li button:hover {
+    color: #D4AF37;
+}
+
+/* Botón de Login con estilo destacado */
+.btn-login-nav {
+    border: 1px solid #D4AF37 !important;
+    padding: 8px 20px !important;
+    border-radius: 4px;
+    color: #D4AF37 !important;
+    transition: 0.3s ease;
+}
+
+.btn-login-nav:hover {
+    background-color: #D4AF37 !important;
+    color: #121212 !important;
+}
+
+.btn-logout-nav {
+    color: #ff5252 !important;
+}
+
+/* --- OCULTAR ELEMENTOS MÓVILES EN PC --- */
+.mobile-trigger {
+    display: none;
+}
+
+.mobile-dropdown {
+    display: none;
+}
+
+/* --- MEDIA QUERY PARA MÓVILES (Tablets y Celulares) --- */
+@media screen and (max-width: 850px) {
+    .desktop-menu {
+        display: none; /* Ocultamos el menú horizontal en pantallas pequeñas */
+    }
+
+    .mobile-trigger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger-icon {
+        width: 35px;
+        /* Filtro CSS para volver el ícono negro en color dorado para que combine */
+        filter: invert(79%) sepia(35%) saturate(702%) hue-rotate(3deg) brightness(96%) contrast(88%); 
+    }
+
+    .mobile-dropdown {
+        display: block;
+        background-color: #1A1A1A;
+        border-top: 1px solid #333;
+        position: absolute;
+        top: 82px;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.8);
+    }
+
+    .mobile-dropdown ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .mobile-dropdown li {
+        border-bottom: 1px solid #2A2A2A;
+    }
+
+    .mobile-dropdown li a,
+    .mobile-dropdown li button {
+        display: block;
+        padding: 1.2rem 2rem;
+        color: #E0E0E0;
+        text-decoration: none;
+        font-size: 1.1rem;
+        background: none;
+        border: none;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+    }
+
+    .mobile-dropdown li a:hover,
+    .mobile-dropdown li button:hover {
+        background-color: #252525;
+        color: #D4AF37;
+    }
+}
+/* =========================================
+   LÓGICA DEL DROPDOWN EN PC (Puro CSS)
+   ========================================= */
+.dropdown-container {
+    position: relative;
+    padding: 25px 0; /* Crea un área invisible para que el mouse no "pierda" el hover al bajar */
+}
+
+.dropdown-trigger {
+    color: #E0E0E0;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.dropdown-container:hover .dropdown-trigger {
+    color: #D4AF37;
+}
+
+/* La caja del submenú */
+.dropdown-menu-desktop {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1A1A1A;
+    min-width: 220px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.9);
+    border-top: 3px solid #D4AF37;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    
+    /* Animación de entrada */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    transition: all 0.3s ease;
+    border-radius: 0 0 8px 8px;
+}
+
+/* Ajuste específico para que el menú de Login no se salga de la pantalla */
+.auth-dropdown {
+    left: auto;
+    right: 0;
+}
+
+/* Cuando el mouse pasa por el contenedor, el menú aparece */
+.dropdown-container:hover .dropdown-menu-desktop {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-menu-desktop li a {
+    display: block;
+    padding: 12px 25px;
+    color: #B0B0B0;
+    font-weight: 400;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #222;
+}
+
+.dropdown-menu-desktop li a:hover {
+    background-color: #2A2A2A;
+    color: #D4AF37;
+    padding-left: 30px; /* Pequeño efecto de desplazamiento al hacer hover */
+    transition: all 0.2s ease;
+}
+
+/* =========================================
+   LÓGICA DEL ACORDEÓN EN MÓVIL
+   ========================================= */
+.accordion-trigger {
+    padding: 1.2rem 2rem;
+    color: #E0E0E0;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+}
+
+.accordion-trigger:hover {
+    background-color: #252525;
+    color: #D4AF37;
+}
+
+.accordion-content {
+    background-color: #0A0A0A; /* Un poco más oscuro para dar sensación de profundidad */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.accordion-content li a {
+    padding: 1rem 2rem 1rem 3.5rem !important; /* Sangría a la izquierda para notar que es submenú */
+    font-size: 1rem !important;
+    color: #888 !important;
+    border-bottom: 1px solid #151515 !important;
+}
+
+.accordion-content li a:hover {
+    color: #D4AF37 !important;
+    background-color: #1A1A1A !important;
+}

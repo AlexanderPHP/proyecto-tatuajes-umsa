@@ -1,0 +1,313 @@
+.carrera-page {
+    min-height: 100vh;
+    background-color: var(--bg-principal);
+}
+
+/* La cabecera de la página (Ej: "Catálogo de Diseños") */
+.carrera-header {
+    background: linear-gradient(to bottom, var(--bg-secundario) 0%, var(--bg-principal) 100%);
+    color: var(--texto-principal);
+    padding: 4rem 2rem;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+.carrera-header h1 {
+    font-size: 3rem;
+    margin: 0 0 1rem 0;
+    letter-spacing: 1px;
+}
+
+.carrera-header p {
+    font-size: 1.2rem;
+    color: var(--texto-secundario);
+    font-family: var(--fuente-textos);
+    margin: 0;
+}
+
+.carrera-contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+/* Formularios o secciones genéricas */
+.seccion {
+    background-color: var(--bg-tarjetas);
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    border: 1px solid #333;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.seccion h2 {
+    margin-top: 0;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #444;
+}
+
+.seccion p {
+    color: var(--texto-secundario);
+}
+
+.seccion ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+}
+
+.seccion li {
+    padding: 0.8rem 0;
+    padding-left: 2rem;
+    position: relative;
+    color: #666;
+    line-height: 1.6;
+}
+
+.seccion li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #967f00;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.btn-inscribirse {
+    background-color: #1b7d1b;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.btn-inscribirse:hover {
+    background-color: #2d9c2d;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(27, 125, 27, 0.3);
+}
+
+@media (max-width: 768px) {
+    .carrera-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .carrera-contenido {
+        padding: 0 1rem 2rem;
+    }
+
+    .seccion {
+        padding: 1.5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Tabla de horarios */
+.tabla-horarios {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.tabla-horarios th,
+.tabla-horarios td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.tabla-horarios th {
+    background-color: #967f00;
+    color: white;
+    font-weight: 600;
+}
+
+.tabla-horarios tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Materias */
+.materias-info {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.materias-info h3 {
+    color: #967f00;
+    margin-top: 0;
+}
+
+.materias-info ul {
+    margin: 0;
+}
+
+/* Lista de trámites */
+.lista-tramites {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-tramites li {
+    padding: 0.8rem 0;
+    padding-left: 2rem;
+    position: relative;
+    color: #666;
+    line-height: 1.6;
+}
+
+.lista-tramites li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #967f00;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Configuración */
+.configuracion-item {
+    margin: 1rem 0;
+    padding: 0.8rem;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.configuracion-item:hover {
+    background-color: #f5f5f5;
+}
+
+.checkbox-config,
+.radio-config {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    cursor: pointer;
+}
+
+.checkbox-config input,
+.radio-config input {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+}
+
+.checkbox-config span,
+.radio-config span {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Contacto */
+.contacto-item {
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border-left: 5px solid #967f00;
+    border-radius: 5px;
+}
+
+.contacto-item h3 {
+    color: #967f00;
+    margin: 0 0 0.5rem 0;
+}
+
+.contacto-item p {
+    margin: 0.3rem 0;
+    color: #666;
+}
+
+/* Horario */
+.horario-info {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+.horario-info p {
+    margin: 0.5rem 0;
+    color: #666;
+}
+
+/* Cómo llegar */
+.como-llegar h3 {
+    color: #967f00;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Mapa */
+.mapa-contenedor {
+    padding: 0 !important;
+}
+
+/* Tema visual */
+.tema-opcion {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    transition: 0.3s;
+}
+
+.tema-opcion:hover {
+    border-color: #1b7d1b;
+}
+
+.preview-tema {
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.preview-tema.claro {
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+}
+
+.preview-tema.oscuro {
+    background-color: #1a1a1a;
+}
+
+.preview-tema.automatico {
+    background: linear-gradient(90deg, #ffffff 0%, #1a1a1a 100%);
+}
+
+.tema-opcion p {
+    margin: 0.5rem 0 0 0;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+    .tabla-horarios {
+        font-size: 0.9rem;
+    }
+
+    .tabla-horarios th,
+    .tabla-horarios td {
+        padding: 0.8rem;
+    }
+
+    .contacto-item {
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+}
