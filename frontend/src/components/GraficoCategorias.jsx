@@ -9,8 +9,6 @@ function GraficoCategorias({ disenos }) {
 
     useEffect(() => {
         if (!disenos || disenos.length === 0) return
-
-        // Contar diseños por categoría
         const conteo = {}
         disenos.forEach(d => {
             conteo[d.categoria] = (conteo[d.categoria] || 0) + 1
@@ -19,7 +17,6 @@ function GraficoCategorias({ disenos }) {
         const categorias = Object.keys(conteo)
         const cantidades = Object.values(conteo)
 
-        // Colores para cada categoría
         const colores = [
             '#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0',
             '#9966FF', '#FF9F40'

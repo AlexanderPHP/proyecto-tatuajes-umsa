@@ -4,21 +4,17 @@ function ReportePDF({ disenos }) {
     const generarPDF = () => {
         const doc = new jsPDF()
         
-        // Título
         doc.setFontSize(20)
         doc.text('AlexiStyle Studio - Catálogo de Diseños', 20, 20)
         
-        // Fecha
         doc.setFontSize(12)
         doc.text(`Fecha: ${new Date().toLocaleDateString()}`, 20, 30)
         
-        // Línea separadora
         doc.line(20, 35, 190, 35)
         
         let y = 45
         
         disenos.forEach((diseno, index) => {
-            // Si se acaba la página, crear nueva
             if (y > 250) {
                 doc.addPage()
                 y = 20

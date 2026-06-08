@@ -1,5 +1,4 @@
 :root {
-  /* Paleta de Colores - Dark Ink */
   --bg-principal: #121212;
   --bg-secundario: #1A1A1A;
   --bg-tarjetas: #222222;
@@ -10,10 +9,9 @@
   --texto-principal: #E0E0E0;
   --texto-secundario: #A0A0A0;
   
-  --peligro: #cf6679; /* Un rojo más suave que no lastima la vista en modo oscuro */
-  --exito: #03dac6; /* Un verde turquesa elegante */
+  --peligro: #cf6679; 
+  --exito: #03dac6; 
 
-  /* Tipografías */
   --fuente-titulos: 'Playfair Display', serif;
   --fuente-textos: 'Montserrat', sans-serif;
 }

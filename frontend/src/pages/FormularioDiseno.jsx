@@ -30,7 +30,7 @@ function FormularioDiseno({ onDisenoCreado }) {
                 precioBase: Number(formData.precioBase)
             }
             await crearDiseno(datos)
-            setMensaje('✅ Diseño creado exitosamente')
+            setMensaje('Diseño creado exitosamente')
             setFormData({
                 nombre: '',
                 descripcion: '',
@@ -48,7 +48,7 @@ function FormularioDiseno({ onDisenoCreado }) {
 
     return (
         <div className="seccion" style={{ marginBottom: '20px' }}>
-            <h2>➕ Agregar Nuevo Diseñoo</h2>
+            <h2>Agregar Nuevo Diseñoo</h2>
             {mensaje && <p style={{ padding: '10px', backgroundColor: mensaje.includes('✅') ? '#d4edda' : '#f8d7da', borderRadius: '4px', marginBottom: '10px' }}>{mensaje}</p>}
             
             <form onSubmit={handleSubmit}>

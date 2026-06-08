@@ -4,7 +4,6 @@ import './css_components/UnoDeSeis.css'
 function HeroSection() {
     return (
         <section className="hero-container">
-            {/* Capa oscura para que el texto resalte sobre la imagen */}
             <div className="hero-overlay"></div>
             
             <div className="hero-content">

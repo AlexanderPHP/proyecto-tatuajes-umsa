@@ -36,7 +36,7 @@ function CatalogoDisenos() {
             alert('✅ Diseño eliminado correctamente')
             cargarDisenos()
         } catch (error) {
-            alert('❌ Error al eliminar: ' + error.message)
+            alert(' Error al eliminar: ' + error.message)
         }
     }
 
@@ -67,7 +67,6 @@ function CatalogoDisenos() {
                 </div>
 
                 <div className="carrera-contenido">
-                    {/* Mostrar formulario de edición si hay diseño seleccionado */}
                     {disenoEditando ? (
                         <FormularioEditarDiseno 
                             disenoId={disenoEditando}

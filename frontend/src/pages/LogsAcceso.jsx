@@ -64,9 +64,6 @@ function LogsAcceso() {
                                     <th style={{ padding: '12px', textAlign: 'left' }}>Evento</th>
                                     <th style={{ padding: '12px', textAlign: 'left' }}>Usuario</th>
                                     <th style={{ padding: '12px', textAlign: 'left' }}>Email</th>
-                                    {/*
-                                    <th style={{ padding: '12px', textAlign: 'left' }}>IP</th>
-                                    */}
                                     <th style={{ padding: '12px', textAlign: 'left' }}>Browser</th>
                                     <th style={{ padding: '12px', textAlign: 'left' }}>Fecha y Hora</th>
                                 </tr>
@@ -83,11 +80,6 @@ function LogsAcceso() {
                                         <td style={{ padding: '10px' }}>
                                             {log.email || 'N/A'}
                                         </td>
-                                        {/*
-                                        <td style={{ padding: '10px' }}>
-                                            {log.ip || 'N/A'}
-                                        </td>
-                                        */}
                                         <td style={{ padding: '10px', fontSize: '12px' }}>
                                             {log.browser ? log.browser.substring(0, 50) + '...' : 'N/A'}
                                         </td>

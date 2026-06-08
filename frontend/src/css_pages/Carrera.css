@@ -3,7 +3,6 @@
     background-color: var(--bg-principal);
 }
 
-/* La cabecera de la página (Ej: "Catálogo de Diseños") */
 .carrera-header {
     background: linear-gradient(to bottom, var(--bg-secundario) 0%, var(--bg-principal) 100%);
     color: var(--texto-principal);
@@ -31,7 +30,6 @@
     padding: 3rem 2rem;
 }
 
-/* Formularios o secciones genéricas */
 .seccion {
     background-color: var(--bg-tarjetas);
     padding: 2.5rem;
@@ -107,15 +105,6 @@
     }
 }
 
-
-
-
-
-
-
-
-
-/* Tabla de horarios */
 .tabla-horarios {
     width: 100%;
     border-collapse: collapse;
@@ -139,7 +128,6 @@
     background-color: #f5f5f5;
 }
 
-/* Materias */
 .materias-info {
     margin: 1.5rem 0;
     padding: 1rem;
@@ -156,7 +144,6 @@
     margin: 0;
 }
 
-/* Lista de trámites */
 .lista-tramites {
     list-style: none;
     padding: 0;
@@ -180,7 +167,6 @@
     font-size: 1.2rem;
 }
 
-/* Configuración */
 .configuracion-item {
     margin: 1rem 0;
     padding: 0.8rem;
@@ -213,7 +199,6 @@
     color: #333;
 }
 
-/* Contacto */
 .contacto-item {
     margin: 1.5rem 0;
     padding: 1.5rem;
@@ -232,7 +217,6 @@
     color: #666;
 }
 
-/* Horario */
 .horario-info {
     background-color: #f9f9f9;
     padding: 1.5rem;
@@ -244,19 +228,16 @@
     color: #666;
 }
 
-/* Cómo llegar */
 .como-llegar h3 {
     color: #967f00;
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
 }
 
-/* Mapa */
 .mapa-contenedor {
     padding: 0 !important;
 }
 
-/* Tema visual */
 .tema-opcion {
     margin: 2rem 0;
     padding: 1.5rem;

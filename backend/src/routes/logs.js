@@ -8,7 +8,7 @@ router.get('/', async (req, res) => {
     try {
         const logs = await LogAcceso.find()
             .populate('usuario', 'nombre email')
-            .sort({ fechaHora: -1 }) // Más recientes primero
+            .sort({ fechaHora: -1 })
         res.json(logs)
     } catch (error) {
         res.status(500).json({ msg: error.message })

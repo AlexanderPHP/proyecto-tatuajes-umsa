@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://proyecto-tatuajes-backend.onrender.com/api",  // ← AGREGA /api
+  baseURL: "https://proyecto-tatuajes-backend.onrender.com/api",  
 });
 
 api.interceptors.request.use((config) => {

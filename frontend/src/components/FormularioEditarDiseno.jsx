@@ -25,7 +25,7 @@ function FormularioEditarDiseno({ disenoId, onDisenoActualizado, onCancelar }) {
                     tiempoEstimado: diseno.tiempoEstimado
                 })
             } catch (error) {
-                setMensaje('❌ Error al cargar diseño: ' + error.message)
+                setMensaje('Error al cargar diseño: ' + error.message)
             }
         }
         cargarDiseno()
@@ -52,7 +52,7 @@ function FormularioEditarDiseno({ disenoId, onDisenoActualizado, onCancelar }) {
             setMensaje('✅ Diseño actualizado exitosamente')
             if (onDisenoActualizado) onDisenoActualizado()
         } catch (error) {
-            setMensaje('❌ Error al actualizar: ' + error.message)
+            setMensaje('Error al actualizar: ' + error.message)
         } finally {
             setCargando(false)
         }
@@ -142,7 +142,7 @@ function FormularioEditarDiseno({ disenoId, onDisenoActualizado, onCancelar }) {
                         marginRight: '10px'
                     }}
                 >
-                    {cargando ? 'Guardando...' : '💾 Guardar Cambios'}
+                    {cargando ? 'Guardando...' : ' Guardar Cambios'}
                 </button>
                 
                 <button
@@ -157,7 +157,7 @@ function FormularioEditarDiseno({ disenoId, onDisenoActualizado, onCancelar }) {
                         cursor: 'pointer'
                     }}
                 >
-                    ❌ Cancelar
+                    Cancelar
                 </button>
             </form>
         </div>

@@ -42,18 +42,15 @@ function Footer() {
                             <img src="/whatssapp_icon.png" alt="WhatsApp" className="icono-red" />
                         </a>
                     </div>
-
-                    {/* Enlaces rápidos */}
                     <div className="enlaces-rapidos">
                         <a href="#ubicacion">Ubicación y contacto</a>
                     </div>
                 </div>
             </div>
 
-            {/* Línea divisora */}
             <hr className="footer-divider" />
 
-            {/* Copyright y Créditos */}
+            {/* nombres */}
             <div className="footer-bottom">
                 <p>&copy; Patto Tattoo - La Paz, Bolivia | Tinta que cuenta historias</p>
                 <p className="creditos-dev">Desarrollado por Alexander Cruz Apaza y Henry Dario Chipana Ergueta </p>

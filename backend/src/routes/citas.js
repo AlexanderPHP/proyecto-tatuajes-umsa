@@ -3,7 +3,7 @@ import Cita from "../models/Cita.js";
 
 const router = express.Router();
 
-// CRUD completo para citas
+// CRUD para citas
 
 router.get("/", async (req, res) => {
   try {

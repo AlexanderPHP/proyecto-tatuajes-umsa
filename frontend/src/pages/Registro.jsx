@@ -22,7 +22,6 @@ function Registro() {
         const { name, value } = e.target
         setFormData({ ...formData, [name]: value })
         
-        // Validar fortaleza de contraseña
         if (name === 'password') {
             evaluarFortaleza(value)
         }
@@ -50,7 +49,7 @@ function Registro() {
         e.preventDefault()
         
         if (fortaleza < 2) {
-            setError('❌ La contraseña es muy débil. Usa al menos 6 caracteres, una mayúscula y un número.')
+            setError('La contraseña es muy débil. Usa al menos 6 caracteres, una mayúscula y un número.')
             return
         }
         

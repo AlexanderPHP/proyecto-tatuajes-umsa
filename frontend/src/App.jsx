@@ -12,16 +12,13 @@ import Footer from './components/Footer'
 import RutaProtegida from './components/RutaProtegida'
 import LogsAcceso from './pages/LogsAcceso'
 
-// Páginas de carreras
 import CatalogoDisenos from './pages/CatalogoDisenos'
 import FormularioDiseno from './pages/FormularioDiseno'
 import Login from './pages/Login'
 import Registro from './pages/Registro'
 
-// Páginas de gestión académica
 import HorariosYMaterias from './pages/HorariosYMaterias'
 
-// Páginas de contacto
 import MapaInteractivo from './pages/MapaInteractivo'
 import DirectorioTelefonico from './pages/DirectorioTelefonico'
 
@@ -44,7 +41,6 @@ function App() {
           </>
         } />
 
-        {/* PÁGINAS DE CARRERAS */}
         <Route path="/CatalogoDisenos" element={
             <RutaProtegida>
                 <CatalogoDisenos />
@@ -63,10 +59,8 @@ function App() {
             </RutaProtegida>
         } />
 
-        {/* PÁGINAS DE GESTIÓN ACADÉMICA */}
         <Route path="/horarios-y-materias" element={<HorariosYMaterias />} />
 
-        {/* PÁGINAS DE CONTACTO */}
         <Route path="/mapa-interactivo" element={<MapaInteractivo />} />
         <Route path="/directorio-telefonico" element={<DirectorioTelefonico />} />
 
